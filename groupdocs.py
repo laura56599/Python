@@ -2,8 +2,8 @@
 
 import groupdocs_conversion_cloud
 
-app_sid =  "4eaadf6b-a557-4045-a6b0-d22e9bc51310"
-app_key = "9a5e10a7061d95f0daeeb6b5b73a2ac9"
+app_sid =  "api SID"
+app_key = "api key"
 
 convert_api = groupdocs_conversion_cloud.ConvertApi.from_keys(app_sid, app_key)
 file_api = groupdocs_conversion_cloud.FileApi.from_keys(app_sid, app_key)
@@ -12,9 +12,9 @@ try:
 
 # Cargar el archivo desde la fuante al almacenamiento
 
-    filename = 'SOLICITUD AUTORIZACION CITA MEDICA TE VELEZ CORDERO LAURA 03 AGOSTO 2023 1.pdf'
-    remote_name = 'SOLICITUD AUTORIZACION CITA MEDICA TE VELEZ CORDERO LAURA 03 AGOSTO 2023 1.pdf'
-    output_name = 'SOLICITUD AUTORIZACION CITA MEDICA TE VELEZ CORDERO LAURA 03 AGOSTO 2023 1.docx'
+    filename = 'file name.pdf'
+    remote_name = 'file name.pdf'
+    output_name = 'file name.docx'
     strformat = 'docx'
     request_upload = groupdocs_conversion_cloud.UploadFileRequest(remote_name, filename)
     response_upload = file_api.upload_file(request_upload)
